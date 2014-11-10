@@ -1,7 +1,7 @@
 xcode6-iboutlet-crash-case
 ==========================
 
-xcode6 IBOutlet crash case with mixing Swift and ObjC.
+xcode6 is crash on debbuging time with project mixing Swift and ObjC and using IBOutlet.
 
 # How to reproduce
 
