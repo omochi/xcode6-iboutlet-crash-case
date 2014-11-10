@@ -18,6 +18,10 @@ According to my investigation, occuring conditions are below.
 - Swift project.
 - Custom view class is link to IBOutlet property.
 - Custom view class is written by ObjC.
-- Custom view class header is imported by other header which is imported by Swift-ObjC-Briding header.
+- Custom view class header is `#import`ed by other header which is `#import`ed by Swift-ObjC-Briding header.
 - Both import statements set force above are not using double quote `"FooLib.h"` but angle bracket `<FooLib/FooLib.h>`.
-- In Xcode build setting, `Header search paths` is not using `$SRCROOT/` but `./`.
+- In Xcode build setting, `Header search paths` is not using `$SRCROOT/` but `./` .
+
+# My easy workaround
+
+Last condition is easy to avoid by changing relative path to absolute with `$SRCROOT`
